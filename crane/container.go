@@ -1519,7 +1519,7 @@ func (c *container) Exec(cmds []string, privileged bool, user string) {
 	executeCommand("docker", args, c.CommandsOut(), c.CommandsErr())
 }
 
-// Remove container
+// Rm removes container
 func (c *container) Rm(force bool, volumes bool) {
 	if c.Exists() {
 		name := c.ActualName(false)

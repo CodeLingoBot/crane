@@ -197,7 +197,7 @@ func findConfigPath(files []string) string {
 	panic(StatusError{fmt.Errorf("No config files found for: %v", files), 78})
 }
 
-// Return path of config file
+// Path returns path of config file
 func (c *config) Path() string {
 	return c.path
 }
